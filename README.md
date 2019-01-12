@@ -99,20 +99,33 @@ Tambien puedes hacer un modulo completo para 4 salidas AC esto con el fin de int
 
 ## Development:
 
-Para el desarrollo de este circuito primero se realizaron pruebas de cada una de las etapas del circuito para demostar su efectividad, el primer circuito que se realizo para probar fue el control de los focos mediante un boton.
+Para el desarrollo de este circuito primero se realizaron pruebas de cada una de las etapas del circuito para demostar su efectividad, el primer circuito que se realizo para probar fue el control de los focos mediante un boton y guantes de seguridad debido al alto voltaje.
 
 [![Test Circuit #1](https://i.ibb.co/MGxsBNS/descarga.png)](https://youtu.be/uqsgAZPN9SU)
 
+Para el segundo circuito ya que el control de foco funciona bien se realizo una plataforma con leds para ver como el Arduino controlaba las luces al ritmo de la musica, el codigo esta en la carpeta "Arduino Code", el codigo esta comentado perfectamente.
 
 [![Test Circuit #2](https://i.ibb.co/0BhfRg8/descarga-1.png)](https://youtu.be/uK5E9QZavhg)
 
+Una vez vimos que funcionaba el control de las luces, realizamos en una protoboard todo el circuito parav el control de los 4 focos y lo conectamos al Arduino.
 
 [![Test Circuit #3](https://i.ibb.co/28DCBnW/descarga-2.png)](https://youtu.be/EiSSqIL-sus)
 
 
 ## The Final Product:
 
-Una vez 
+Ya con el circuito funcionando decidimos realizar modulos de control como el que les mostramos en la imagen para no depender de que algun cable fallara en la protoboard.
+
+<img src="https://i.ibb.co/cwBmGVz/Whats-App-Image-2019-01-10-at-17-50-41.jpg" width="300">
+<img src="https://i.ibb.co/JmDS6tv/Whats-App-Image-2019-01-10-at-17-59-32.jpg" width="300">
+
+La PCB se realizo basandose en la PCB que esta en la carpeta "PCB Files" sin embargo ya que no contabamos con el papel termotranfer tuvimos que optar por realizar el trazo con plumon sharpie, el cual no se borra cuando sumerges la placa en cloruro ferrico, este proceso es el clasico para realizar PCB caseras como se muestra en el siguiente link.
+
+https://www.hackster.io/Junezriyaz/how-to-make-pcb-using-marker-531087
+
+Ya con las 4 PCB realizadas decidimos meter todo el circuito en una caja, forrarlo y ponerle 4 focos identicos para que este fuera un producto mas estetico y facil de transportar.
+
+<img src="https://i.ibb.co/3Yjs6Qz/IMG-1415.jpg">
 
 ## Comments:
 
