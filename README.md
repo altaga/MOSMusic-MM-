@@ -9,7 +9,7 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 
 * [Introduction](#introduction)
 * [Materials](#materials)
-
+* [The Circuit](#the-circuit)
 * [Comments](#comments)
 * [References](#references)
 
@@ -50,13 +50,23 @@ Para ello nosotros realizamos el siguiente sistema de sincronzacion de luces par
 
 Optional to make the PCB:
 
-Electronics Welding Materials:
+- Soldering Station.
 - Wire Wrap Cable.
 - Soldering Iron.
 - Copper Clad Plate
 - Ferric Chloride
 - Sharpie Pen.
 - Alligator Cable x 4.
+
+## The Circuit:
+
+<img src="https://i.ibb.co/XsVhrCp/Infineon.png" width="1000">
+
+El circuito tiene como finalidad pasar de una señal digital de 5 - 0 V DC a una señal de control de 120 V AC.
+
+En la primera etapa del circuito tenemos un Transitor 600VCoolMOS de Infineon, el cual nos permitira controlar el optoacoplador exigiendo lo minimo de corriente a la placa arduino, debido a que el optoacoplador requiere almenos 5 volts a 36mA para poder conducir y esto esta muy al limite de la corriente que puede suministrar la placa arduino, sin embargo el 600VCoolMOS solo require una señal de 5 volts a 60uA, mostrando asi una excesiva mejora en el consumo que le exige a la placa.
+
+
 
 ## Comments:
 
