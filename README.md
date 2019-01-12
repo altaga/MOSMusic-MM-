@@ -70,7 +70,7 @@ El circuito tiene como finalidad pasar de una señal digital de 5 - 0 V DC a una
 
 En la primera etapa del circuito tenemos un Transitor 600VCoolMOS de Infineon, el cual nos permitira controlar el optoacoplador exigiendo lo minimo de corriente a la placa arduino, debido a que el optoacoplador requiere almenos 5 volts a 36mA para poder conducir y esto esta muy al limite de la corriente que puede suministrar la placa arduino, sin embargo el 600VCoolMOS solo require una señal de 5 volts a 60uA, mostrando asi una excesiva mejora en el consumo que le exige a la placa.
 
-<img src="https://i.ibb.co/zX2XQSj/Infineon.png">
+<img src="https://i.ibb.co/nBZXY0G/Infineon.png">
 El funcionamiento del MOSFET es aterrizar a tierra el diodo del optoacoplador, una vez este esta activado permite el flujo de energia a travez del DIAC y esto a su vez permitiendo el paso de corriente en el TRIAC conectado al foco y encendiendolo en el proceso.
 
 | Comparison                     | Voltage [v]  | Current [mA] | Max Current I/O Pins [mA]|
