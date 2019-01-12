@@ -28,6 +28,12 @@ Ninguno de los productos disponibles en el mercado lo venden por menos de 40 dol
 
 Para ello nosotros realizamos el siguiente sistema de sincronzacion de luces para elementos electricos (120 o 220 volts).
 
+Video: Click on the image
+[![MOSMusic - The Gray Hat - Arduino Music](https://i.ibb.co/cCkXrhZ/1219145071.jpg)](https://www.youtube.com/watch?v=daAjffZg2-g)
+
+Sorry github does not allow embed videos.
+
+
 ## Materials:
 
 - Cable                                x 2 Meters.
@@ -65,7 +71,6 @@ El circuito tiene como finalidad pasar de una señal digital de 5 - 0 V DC a una
 En la primera etapa del circuito tenemos un Transitor 600VCoolMOS de Infineon, el cual nos permitira controlar el optoacoplador exigiendo lo minimo de corriente a la placa arduino, debido a que el optoacoplador requiere almenos 5 volts a 36mA para poder conducir y esto esta muy al limite de la corriente que puede suministrar la placa arduino, sin embargo el 600VCoolMOS solo require una señal de 5 volts a 60uA, mostrando asi una excesiva mejora en el consumo que le exige a la placa.
 
 <img src="https://i.ibb.co/zX2XQSj/Infineon.png">
-
 El funcionamiento del MOSFET es aterrizar a tierra el diodo del optoacoplador, una vez este esta activado permite el flujo de energia a travez del DIAC y esto a su vez permitiendo el paso de corriente en el TRIAC conectado al foco y encendiendolo en el proceso.
 
 | Comparison                     | Voltage [v]  | Current [mA] | Max Current I/O Pins [mA]|
