@@ -11,6 +11,8 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 * [Materials](#materials)
 * [The Circuit](#the-circuit)
 * [The PCB](#the-pcb)
+* [Development](#development)
+* [The Final Product](#the-final-product)
 * [Comments](#comments)
 * [References](#references)
 
@@ -94,6 +96,23 @@ Para este proyecto es posible realizar modulos individuales esto con el fin de p
 Tambien puedes hacer un modulo completo para 4 salidas AC esto con el fin de integrar todo el sistema en una placa, ambos archivos estan en la carpeta "PBC Files".
 
 <img src="https://i.ibb.co/tZhy2tC/4modules.png">
+
+## Development:
+
+Para el desarrollo de este circuito primero se realizaron pruebas de cada una de las etapas del circuito para demostar su efectividad, el primer circuito que se realizo para probar fue el control de los focos mediante un boton.
+
+[![Test Circuit #1](https://i.ibb.co/MGxsBNS/descarga.png)](https://youtu.be/uqsgAZPN9SU)
+
+
+[![Test Circuit #2](https://i.ibb.co/0BhfRg8/descarga-1.png)](https://youtu.be/uK5E9QZavhg)
+
+
+[![Test Circuit #3](https://i.ibb.co/28DCBnW/descarga-2.png)](https://youtu.be/EiSSqIL-sus)
+
+
+## The Final Product:
+
+Una vez 
 
 ## Comments:
 
