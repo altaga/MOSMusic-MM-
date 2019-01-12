@@ -35,4 +35,32 @@ Para ello nosotros realizamos el siguiente sistema de sincronzacion de luces par
 
 ## Materials:
 
-- 
+- Lightbulb socket x 4
+- Lightbulb        x 4
+- Plug
+- Cable            2 Meters
+- IPT60R028G7      x 4 (600VCoolMOS).
+- MOC3021          x 4 (Optoisolator Triac Driver).
+- 2N6073AG         x 4 (Triac).
+- 1uF Cap          x 4.
+- 220 Ω            x 4.
+- 100 kΩ           x 4.
+- 10  kΩ           x 4.
+- 330 Ω            x 4.
+- Protoboard.
+- Dupont Cable or Jumpers (to many).
+- Arduino Board.
+- 12 Volts Source (For Arduino).
+
+Optional to make the PCB:
+
+Electronics Welding Materials:
+- Wire Wrap Cable.
+- Soldering Iron.
+- Copper Clad Plate
+- Ferric Chloride
+- Sharpie Pen.
+- Alligator Cable x 4.
+
+
+
