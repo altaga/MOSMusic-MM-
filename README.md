@@ -29,14 +29,6 @@ Algunos productos similares en el mercado de muy baja calidad:
 
 Ninguno de los productos disponibles en el mercado lo venden por menos de 40 dolares y esto solo permite el control de elementos de baja potencia como lo son los LED'S, pero si en verdad queremos controlar elementos de alta potencia necesitamos un circuito que sea capaz de ello sin arriesgar el controlador de las luces, en esta caso un Arduino.
 
-Para ello nosotros realizamos el siguiente sistema de sincronzacion de luces para elementos electricos (120 o 220 volts).
-
-Video: Click on the image
-[![MOSMusic - The Gray Hat - Arduino Music](https://i.ibb.co/cCkXrhZ/1219145071.jpg)](https://www.youtube.com/watch?v=daAjffZg2-g)
-
-Sorry github does not allow embed videos.
-
-
 ## Materials:
 
 - Cable                                x 2 Meters.
@@ -125,6 +117,13 @@ https://www.hackster.io/Junezriyaz/how-to-make-pcb-using-marker-531087
 Ya con las 4 PCB realizadas decidimos meter todo el circuito en una caja, forrarlo y ponerle 4 focos identicos para que este fuera un producto mas estetico y facil de transportar.
 
 <img src="https://i.ibb.co/3Yjs6Qz/IMG-1415.jpg">
+
+Con esto logramos el sistema de sincronzacion de luces para elementos electricos (120 o 220 volts).
+
+Video: Click on the image
+[![MOSMusic - The Gray Hat - Arduino Music](https://i.ibb.co/cCkXrhZ/1219145071.jpg)](https://www.youtube.com/watch?v=daAjffZg2-g)
+
+Sorry github does not allow embed videos.
 
 ## Comments:
 
