@@ -3,6 +3,8 @@ Portable lighting station synchronized with music.
 
 <img src="https://i.ibb.co/qYfzKdy/IMG-1374.jpg" width="1000">
 
+![](https://media.giphy.com/media/2A53iheUI58rXtdvs9/giphy.gif)
+
 Always use technology to improve the world, if you are a black hat or gray hat hacker please abstain at this point ......... or at least leave your star to make me feel less guilty XP.
 
 # Table of contents
