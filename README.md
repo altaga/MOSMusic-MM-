@@ -9,12 +9,7 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 
 * [Introduction](#introduction)
 * [Materials](#materials)
-* [PC Setup](#pc-setup)
-* [Management of the IBM Watson IoT Platform](#management-of-the-ibm-watson-iot-platform)
-* [Handling of IoT devices using the IBM Watson IoT Platform (specifically ESP8266 using ArduinoIDE)](#handling-of-iot-devices-using-the-ibm-watson-iot-platform)
-* [Handling WEB pages with connectivity to IBM Watson IoT Platform](#handling-web-pages-with-connectivity-to-ibm-watson-iot-platform)
-* [Connectivity between IoT device and WEB application](#connectivity-between-iot-device-and-web-application)
-* [Connectivity between WEB application and IoT device](#connectivity-between-web-application-and-iot-device)
+
 * [Comments](#comments)
 * [References](#references)
 
@@ -35,22 +30,23 @@ Para ello nosotros realizamos el siguiente sistema de sincronzacion de luces par
 
 ## Materials:
 
-- Lightbulb socket x 4
-- Lightbulb        x 4
-- Plug
-- Cable            2 Meters
-- IPT60R028G7      x 4 (600VCoolMOS).
-- MOC3021          x 4 (Optoisolator Triac Driver).
-- 2N6073AG         x 4 (Triac).
-- 1uF Cap          x 4.
-- 220 Ω            x 4.
-- 100 kΩ           x 4.
-- 10  kΩ           x 4.
-- 330 Ω            x 4.
-- Protoboard.
-- Dupont Cable or Jumpers (to many).
-- Arduino Board.
-- 12 Volts Source (For Arduino).
+- Cable                                x 2 Meters.
+- IPT60R028G7 (600VCoolMOS)            x 4.
+- MOC3021 (Optoisolator Triac Driver)  x 4.
+- 2N6073AG (Triac)                     x 4.
+- 1uF Cap                              x 4.
+- 220 Ω                                x 4.
+- 100 kΩ                               x 4.
+- 10  kΩ                               x 4.
+- 330 Ω                                x 4.
+- Lightbulb socket                     x 4.
+- Lightbulb                            x 4.
+- Plug                                 x 1.
+- Protoboard.                          x 1.
+- Dupont Cable or Jumpers              To Many.
+- Arduino Board.                       x 1.
+- 12 Volts Source (For Arduino).       x 1.
+- Sound Detection Sensor Module Sensor x 1.
 
 Optional to make the PCB:
 
@@ -62,5 +58,7 @@ Electronics Welding Materials:
 - Sharpie Pen.
 - Alligator Cable x 4.
 
+## Comments:
 
+## References:
 
