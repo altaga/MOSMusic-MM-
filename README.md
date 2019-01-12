@@ -60,11 +60,18 @@ Optional to make the PCB:
 
 ## The Circuit:
 
-<img src="https://i.ibb.co/XsVhrCp/Infineon.png" width="1000">
+<img src="https://i.ibb.co/zX2XQSj/Infineon.png">
 
 El circuito tiene como finalidad pasar de una señal digital de 5 - 0 V DC a una señal de control de 120 V AC.
 
 En la primera etapa del circuito tenemos un Transitor 600VCoolMOS de Infineon, el cual nos permitira controlar el optoacoplador exigiendo lo minimo de corriente a la placa arduino, debido a que el optoacoplador requiere almenos 5 volts a 36mA para poder conducir y esto esta muy al limite de la corriente que puede suministrar la placa arduino, sin embargo el 600VCoolMOS solo require una señal de 5 volts a 60uA, mostrando asi una excesiva mejora en el consumo que le exige a la placa.
+
+| Comparison         | Voltage [v]  | Current [mA] | Max Current I/O Pins [mA]|
+|--------------------|--------------|--------------|--------------------------|
+| **Without MOSFET** | 5.0          | 36.0         | 40.0                     | 
+| **With MOSFET**    | 5.0          | 0.06         | 40.0                     |
+
+El funcionamiento de el MOSFET es aterrizar a tierra el diodo del optoacoplador, una vez este esta activado permite el flujo de energia a travez del DIAC y esto a su vez permitiendo el paso de corriente en el TRIAC conectado al foco.
 
 
 
