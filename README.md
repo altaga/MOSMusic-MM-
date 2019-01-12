@@ -1,4 +1,4 @@
-# MOSMusic-MM-
+# MOSMusic(MM)
 Portable lighting station synchronized with music.
 
 <img src="https://i.ibb.co/qYfzKdy/IMG-1374.jpg" width="1000">
