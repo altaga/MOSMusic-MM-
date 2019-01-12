@@ -116,8 +116,7 @@ Una vez vimos que funcionaba el control de las luces, realizamos en una protoboa
 
 Ya con el circuito funcionando decidimos realizar modulos de control como el que les mostramos en la imagen para no depender de que algun cable fallara en la protoboard.
 
-<img src="https://i.ibb.co/cwBmGVz/Whats-App-Image-2019-01-10-at-17-50-41.jpg" width="300">
-<img src="https://i.ibb.co/JmDS6tv/Whats-App-Image-2019-01-10-at-17-59-32.jpg" width="300">
+<img src="https://i.ibb.co/cwBmGVz/Whats-App-Image-2019-01-10-at-17-50-41.jpg" width="400"><img src="https://i.ibb.co/JmDS6tv/Whats-App-Image-2019-01-10-at-17-59-32.jpg" width="400">
 
 La PCB se realizo basandose en la PCB que esta en la carpeta "PCB Files" sin embargo ya que no contabamos con el papel termotranfer tuvimos que optar por realizar el trazo con plumon sharpie, el cual no se borra cuando sumerges la placa en cloruro ferrico, este proceso es el clasico para realizar PCB caseras como se muestra en el siguiente link.
 
