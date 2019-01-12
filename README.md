@@ -10,6 +10,7 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 * [Introduction](#introduction)
 * [Materials](#materials)
 * [The Circuit](#the-circuit)
+* [The PCB](#the-pcb)
 * [Comments](#comments)
 * [References](#references)
 
@@ -81,6 +82,10 @@ El funcionamiento del MOSFET es aterrizar a tierra el diodo del optoacoplador, u
 Otra solucion a este proyecto hubiera sido utilizar relevadores, los cuales tienen como funcion realiar esta tarea pero de forma mecanica y generando un "Click" en cada switcheo, el problema con este tipo de componente es que si usaramos focos dimerizables o la frecuencia de switcheo fuera mayor, el relevador no podria realizar esta tarea, accion que el mosfet, optoacoplador y triac si pueden facilmente.
 
 <img src="https://i.ibb.co/ctHj1N5/Untitled.png">
+
+## The PCB:
+
+
 
 ## Comments:
 
