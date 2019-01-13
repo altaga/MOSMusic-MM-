@@ -133,7 +133,7 @@ Este proyecto se realizo con el fin de demostrar que el control de luces a trave
 
 All the information about the technology used, and direct references are in our wiki:
 
-Wiki: https://github.com/EddOliver/BBM-Bridge-Baby-Monitor/wiki
+Wiki: https://github.com/altaga/MOSMusic-MM-/wiki
 
 Top:
 
