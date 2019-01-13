@@ -127,5 +127,14 @@ Sorry github does not allow embed videos.
 
 ## Comments:
 
+Este proyecto se realizo con el fin de demostrar que el control de luces a travez de microcontroladores puede ser eficiente y barato, ya que los sistemas actuales y de mucho menor calidad son vendidos en precios excesivos y por lo tanto no disponibles para todos.
+
 ## References:
 
+All the information about the technology used, and direct references are in our wiki:
+
+Wiki: https://github.com/EddOliver/BBM-Bridge-Baby-Monitor/wiki
+
+Top:
+
+* [Table of Contents](#table-of-contents)
