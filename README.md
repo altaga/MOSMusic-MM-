@@ -18,24 +18,12 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 
 ## Introduction:
 
-En el mundo actual los conciertos ya no pueden seguir el mismo esquema tradicional de llegar, tocar e irse. Los fanaticos hoy en dia requieren un nivel mayor de emocion y espectaculo, lo que llevo a los oprganizadores de espectaculos tener que comprar costosos sistemas de control de iluminacion y sonido para lograr el nivel necesario para la espectiva de los fans.
-
-Este tipo de sistemas de iluminacion tienen un complejo y costoso sistema de controles para manejar cada una de las luces, la mayoria de las veces siendo necesario realizar un show de luces con anterioridad para cada una de las canciones, aumentando aun mas el costo de el show.
-
-Algunos productos similares en el mercado de muy baja calidad:
-
-- MICTUNING 2nd-Gen RGB LED: https://www.amazon.com/dp/B01FWXT11I/ref=cm_sw_r_tw_dp_U_x_-DvoCbVYSEJ9S
-- LED Strip Lights with Music Sync-Chase: https://www.amazon.com/dp/B07HCH24GL/ref=cm_sw_em_r_mt_dp_U_NCvoCb1G7DEZZ
-
-Ninguno de los productos disponibles en el mercado lo venden por menos de 40 dolares y esto solo permite el control de elementos de baja potencia como lo son los LED'S, pero si en verdad queremos controlar elementos de alta potencia necesitamos un circuito que sea capaz de ello sin arriesgar el controlador de las luces, en esta caso un Arduino.
-
-ENG>
-
 Nowadays for an organizer or independent musician, events, reunions and parties may not follow the traditional way of arriving, playing and leaving. Fans today require a higher level of entertainment, which led to organizers having to buy expensive lighting and sound control systems to achieve the level needed for the fans' show.
 
 This type of lighting systems have a complex and expensive system of controls to handle each of the lights, most of the time it is necessary to set up a light show beforehand for each of the songs, increasing even more the costs.
 
 Here are some similar products in the market, which are of very low quality:
+
 - MICTUNING 2nd-Gen RGB LED: https://www.amazon.com/dp/B01FWXT11I/ref=cm_sw_r_tw_dp_U_x_-DvoCbVYSEJ9S
 - LED Strip Lights with Music Sync-Chase: https://www.amazon.com/dp/B07HCH24GL/ref=cm_sw_em_r_mt_dp_U_NCvoCb1G7DEZZ
 
@@ -73,64 +61,65 @@ Optional to make the PCB:
 
 ## The Circuit:
 
-El circuito tiene como finalidad pasar de una señal digital de 5 - 0 V DC a una señal de control de 120 V AC.
+The purpose of the circuit is to switch from a digital signal of 0-5 V DC to a control signal of 120 V AC.
 
-En la primera etapa del circuito tenemos un Transitor 600VCoolMOS de Infineon, el cual nos permitira controlar el optoacoplador exigiendo lo minimo de corriente a la placa Arduino, debido a que el optoacoplador requiere almenos 5 volts a 36mA para poder conducir y esto esta muy al limite de la corriente que puede suministrar la placa Arduino, sin embargo el 600VCoolMOS solo require una señal de 5 volts a 60uA, mostrando asi una excesiva mejora en el consumo que le exige a la placa.
+In the first stage of the circuit we have an Infineon 600VCoolMOS C7 MOSFET, which will allow us to control the optocoupler demanding the minimum current to the Arduino board, because the optocoupler requires at least 5 volts at 36mA to be able to drive. This is very close to the limit of the current that the Arduino board can supply, however the 600VCoolMOS only requires a signal of 5 volts at 60uA, thus showing an excessive improvement in the consumption that it requires from the board.
 
-Es sumamente importante este consumo porque no da la posibilidad de poder utilizar literalmente cualquier controlador para realizar eta tarea debido a su bajo consumo y no requerir controladores mas caros que si puedan suministrar dicha potencia en sus puertos.
+This consumption is extremely important because it gives us the possibility of being able to literally use any controller to perform this task due to its low consumption, thus not requiring more expensive drivers that can supply said power in their ports.
 
 <img src="https://i.ibb.co/Jx4Jbh9/Infineon.png">
-El funcionamiento del MOSFET es aterrizar a tierra el diodo del optoacoplador, una vez este esta activado permite el flujo de energia a travez del DIAC y esto a su vez permitiendo el paso de corriente en el TRIAC conectado al foco y encendiendolo en el proceso.
+The MOSFET's operation is to ground the optocoupler diode, once this is activated it allows the flow of energy through the DIAC and this in turn allows the passage of current in the TRIAC connected to the lamp and igniting it in the process.
 
 | Comparison                     | Voltage [V]  | Current [mA] | Max Current I/O Pins [mA]|
 |--------------------------------|--------------|--------------|--------------------------|
 | **Without MOSFET 600VCoolMOS** | 5.0          | 36.0         | 40.0                     | 
 | **With MOSFET 600VCoolMOS**    | 5.0          | 0.06         | 40.0                     |
 
-Otra solucion a este proyecto hubiera sido utilizar relevadores, los cuales tienen como funcion realiar esta tarea pero de forma mecanica y generando un "Click" en cada switcheo, el problema con este tipo de componente es que si usaramos focos dimerizables o la frecuencia de switcheo fuera mayor, el relevador no podria realizar esta tarea, accion que el mosfet, optoacoplador y triac si pueden facilmente.
+Another solution to this project would have been to use relays, which have the function of performing this same task but mechanically, by generating a "Click" on each switch. The problem with this type of component is that if we use dimerizable lights or the switching frequency was larger, the relay could not perform this task, which the mosfet, optocoupler and triac can easily do.
 
 <img src="https://i.ibb.co/ctHj1N5/Untitled.png">
 
 ## The PCB:
 
-Para este proyecto es posible realizar modulos individuales esto con el fin de poder expandir la cantidad de focos o dispositivos de alto voltaje conectados al Arduino o a cualquier otra placa.
+For this project it is possible to make individual modules to be able to expand the number of bulbs or high voltage devices connected to the Arduino or to any other board.
 
 <img src="https://i.ibb.co/CbdGKS9/1module.png">
 
-Tambien puedes hacer un modulo completo para 4 salidas AC esto con el fin de integrar todo el sistema en una placa, ambos archivos estan en la carpeta "PBC Files".
+You can also make a complete module for 4 AC outputs this in order to integrate the entire system on one PCB, both files are in the "PBC Files" folder in the Github.
 
 <img src="https://i.ibb.co/tZhy2tC/4modules.png">
 
 ## Development:
 
-Para el desarrollo de este circuito primero se realizaron pruebas de cada una de las etapas del circuito para demostar su efectividad, el primer circuito que se realizo para probar fue el control de los focos mediante un boton y guantes de seguridad debido al alto voltaje.
+To develop this circuit, we first tested each of the stages were carried out to demonstrate its effectiveness, the first circuit to be tested was the control of the bulbs by means of a button and safety gloves due to high voltage. (Please if you are to replicate the experiment use any safety measures possible, playing with live current is not wise).
 
 [![Test Circuit #1](https://i.ibb.co/MGxsBNS/descarga.png)](https://youtu.be/uqsgAZPN9SU)
 
-Para el segundo circuito ya que el control de foco funciona bien se realizo una plataforma con leds para ver como el Arduino controlaba las luces al ritmo de la musica, el codigo esta en la carpeta "Arduino Code", el codigo esta comentado perfectamente.
+For the second circuit since the Lamp control works well, a platform with LEDs was made to see how the Arduino controlled the lights to the rhythm of the music, the code is in the "Arduino Code" folder, the code is thoroughly commented.
 
 [![Test Circuit #2](https://i.ibb.co/0BhfRg8/descarga-1.png)](https://youtu.be/uK5E9QZavhg)
 
-Una vez vimos que funcionaba el control de las luces, realizamos en una protoboard todo el circuito parav el control de los 4 focos y lo conectamos al Arduino.
+Once we saw that the lights control worked, we connected all the components of the whole circuit in a protoboard, to control the 4 lights and connected it to the Arduino.
 
 [![Test Circuit #3](https://i.ibb.co/28DCBnW/descarga-2.png)](https://youtu.be/EiSSqIL-sus)
 
+As you can see this was done in steps to manage safety, I repeat it is dangerous managing live 120V AC power so take any precautions into consideration.
 
 ## The Final Product:
 
-Ya con el circuito funcionando decidimos realizar modulos de control como el que les mostramos en la imagen para no depender de que algun cable fallara en la protoboard.
+With the circuit running, we decided to make control modules like the one shown in the image to not depend on any cable failing in the breadboard.
 
 <img src="https://i.ibb.co/cwBmGVz/Whats-App-Image-2019-01-10-at-17-50-41.jpg" width="400"><img src="https://i.ibb.co/JmDS6tv/Whats-App-Image-2019-01-10-at-17-59-32.jpg" width="400">
 
-La PCB se realizo basandose en la PCB que esta en la carpeta "PCB Files" sin embargo ya que no contabamos con el papel termotranfer tuvimos que optar por realizar el trazo con plumon sharpie, el cual no se borra cuando sumerges la placa en cloruro ferrico, este proceso es el clasico para realizar PCB caseras como se muestra en el siguiente link.
+The board was made based on the one that is in the folder "PCB Files" however since we did not have transfer paper we had to make the vias with a sharpie. It is a permanenr marker so when you dip the plate in ferric chloride it survives, this process is the classic one for making homemade PCBs. You can get to know more about this process in the following link:
 
-https://www.hackster.io/Junezriyaz/how-to-make-pcb-using-marker-531087
+https://www.hackster.io/Junezriyaz/how-to-make-pcb-using-marker-531087 
 
-Ya con las 4 PCB realizadas decidimos meter todo el circuito en una caja, forrarlo y ponerle 4 focos identicos para que este fuera un producto mas estetico y facil de transportar.
+After making three aditional PCB's, we decided to put the entire circuit in a box, covering it and with 4 identical lamps so that this was a more aesthetic product and easy to transport.
 
 <img src="https://i.ibb.co/3Yjs6Qz/IMG-1415.jpg">
 
-Con esto logramos el sistema de sincronzacion de luces para elementos electricos (120 o 220 volts).
+And we are done! With this we have finished the light synchronization system for electrical elements (120 or 220 volts).
 
 Video: Click on the image
 [![MOSMusic - The Gray Hat - Arduino Music](https://i.ibb.co/cCkXrhZ/1219145071.jpg)](https://www.youtube.com/watch?v=daAjffZg2-g)
@@ -139,7 +128,9 @@ Sorry github does not allow embed videos.
 
 ## Comments:
 
-Este proyecto se realizo con el fin de demostrar que el control de luces a travez de microcontroladores puede ser eficiente y barato, ya que los sistemas actuales y de mucho menor calidad son vendidos en precios excesivos y por lo tanto no disponibles para todos.
+This project was carried out in order to demonstrate that the control of lights through microcontrollers can be efficient and cheap, since current systems at a much lower quality are sold at excessive prices and therefore not available to all.
+
+And to showcase a creative and seldom seen approach to use the CoolMOS C7 MOSFETs provided by Infineon
 
 ## References:
 
