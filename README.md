@@ -73,7 +73,7 @@ Es sumamente importante este consumo porque no da la posibilidad de poder utiliz
 <img src="https://i.ibb.co/Jx4Jbh9/Infineon.png">
 El funcionamiento del MOSFET es aterrizar a tierra el diodo del optoacoplador, una vez este esta activado permite el flujo de energia a travez del DIAC y esto a su vez permitiendo el paso de corriente en el TRIAC conectado al foco y encendiendolo en el proceso.
 
-| Comparison                     | Voltage [v]  | Current [mA] | Max Current I/O Pins [mA]|
+| Comparison                     | Voltage [V]  | Current [mA] | Max Current I/O Pins [mA]|
 |--------------------------------|--------------|--------------|--------------------------|
 | **Without MOSFET 600VCoolMOS** | 5.0          | 36.0         | 40.0                     | 
 | **With MOSFET 600VCoolMOS**    | 5.0          | 0.06         | 40.0                     |
