@@ -18,7 +18,7 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 
 ## Introduction:
 
-En el mundo actual los conciertos ya no pueden seguir el mismo esquema tradicional de llegar, tocar e irse.Los fanaticos hoy en dia requieren un nivel mayor de emocion y espectaculo, lo que llevo a los oprganizadores de espectaculos tener que comprar costosos sistemas de control de iluminacion y sonido para lograr el nivel necesario para la espectiva de los fans.
+En el mundo actual los conciertos ya no pueden seguir el mismo esquema tradicional de llegar, tocar e irse. Los fanaticos hoy en dia requieren un nivel mayor de emocion y espectaculo, lo que llevo a los oprganizadores de espectaculos tener que comprar costosos sistemas de control de iluminacion y sonido para lograr el nivel necesario para la espectiva de los fans.
 
 Este tipo de sistemas de iluminacion tienen un complejo y costoso sistema de controles para manejar cada una de las luces, la mayoria de las veces siendo necesario realizar un show de luces con anterioridad para cada una de las canciones, aumentando aun mas el costo de el show.
 
@@ -29,8 +29,17 @@ Algunos productos similares en el mercado de muy baja calidad:
 
 Ninguno de los productos disponibles en el mercado lo venden por menos de 40 dolares y esto solo permite el control de elementos de baja potencia como lo son los LED'S, pero si en verdad queremos controlar elementos de alta potencia necesitamos un circuito que sea capaz de ello sin arriesgar el controlador de las luces, en esta caso un Arduino.
 
-ENG> 
+ENG>
 
+Nowadays for an organizer or independent musician, events, reunions and parties may not follow the traditional way of arriving, playing and leaving. Fans today require a higher level of entertainment, which led to organizers having to buy expensive lighting and sound control systems to achieve the level needed for the fans' show.
+
+This type of lighting systems have a complex and expensive system of controls to handle each of the lights, most of the time it is necessary to set up a light show beforehand for each of the songs, increasing even more the costs.
+
+Here are some similar products in the market, which are of very low quality:
+- MICTUNING 2nd-Gen RGB LED: https://www.amazon.com/dp/B01FWXT11I/ref=cm_sw_r_tw_dp_U_x_-DvoCbVYSEJ9S
+- LED Strip Lights with Music Sync-Chase: https://www.amazon.com/dp/B07HCH24GL/ref=cm_sw_em_r_mt_dp_U_NCvoCb1G7DEZZ
+
+None of the products available in the market sell for less than 40 dollars. They only allows the control of low power elements such as LED's, but if we really want to control high power elements we need a circuit that is capable of it without risking the controller, in this case an Arduino.
 
 ## Materials:
 
