@@ -29,6 +29,9 @@ Algunos productos similares en el mercado de muy baja calidad:
 
 Ninguno de los productos disponibles en el mercado lo venden por menos de 40 dolares y esto solo permite el control de elementos de baja potencia como lo son los LED'S, pero si en verdad queremos controlar elementos de alta potencia necesitamos un circuito que sea capaz de ello sin arriesgar el controlador de las luces, en esta caso un Arduino.
 
+ENG> 
+
+
 ## Materials:
 
 - Cable                                x 2 Meters.
