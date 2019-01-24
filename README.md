@@ -80,12 +80,12 @@ Diferentes resultados en distintas boards:
 
 | Comparison                     | Voltage [V]  | Current [mA] | Max Current I/O Pins [mA]| Boards      | Risk        |
 |--------------------------------|--------------|--------------|--------------------------|-------------|-------------|
-| **Without MOSFET 600VCoolMOS** | 5.0          | 15.0         | 40.0                     | Arduino UNO |    LOW      | 
-| **With MOSFET 600VCoolMOS**    | 5.0          | 0.06         | 40.0                     | Arduino UNO |    LOW      |
+| **Without MOSFET 600VCoolMOS** | 5.0          | 15.0         | 40.0                     | Arduino UNO | LOW         | 
+| **With MOSFET 600VCoolMOS**    | 5.0          | 0.06         | 40.0                     | Arduino UNO | NOTHING     |
 | **Without MOSFET 600VCoolMOS** | 3.3          | 15.0         | 10.0                     | ESP32       | EXTREMELY   |
-| **With MOSFET 600VCoolMOS**    | 3.3          | 0.04         | 10.0                     | ESP32       | EXTREMELY   |
+| **With MOSFET 600VCoolMOS**    | 3.3          | 0.04         | 10.0                     | ESP32       | NOTHING     |
 | **Without MOSFET 600VCoolMOS** | 3.3          | 15.0         | 12.0                     | ESP8266     | HIGH        |
-| **With MOSFET 600VCoolMOS**    | 3.3          | 0.04         | 12.0                     | ESP8266     | HIGH        |
+| **With MOSFET 600VCoolMOS**    | 3.3          | 0.04         | 12.0                     | ESP8266     | NOTHING     |
 
 Another solution to this project would have been to use relays, which have the function of performing this same task but mechanically, by generating a "Click" on each switch. The problem with this type of component is that if we use dimerizable lights or the switching frequency was larger, the relay could not perform this task, which the mosfet, optocoupler and triac can easily do.
 
