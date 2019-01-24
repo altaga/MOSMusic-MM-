@@ -69,7 +69,8 @@ This consumption is extremely important because it gives us the possibility of b
 
 <img src="https://i.ibb.co/Jx4Jbh9/Infineon.png">
 The MOSFET's operation is to ground the optocoupler diode, once this is activated it allows the flow of energy through the DIAC and this in turn allows the passage of current in the TRIAC connected to the lamp and igniting it in the process.
-
+.
+.
 La otra gran ventaja de utilizar el MOSFET es la capacidad de poder aumentar la cantidad de drivers como en la imagen 1 o usar drivers mas potentes sin necesidad de cambiar el diseño del circuito principal.
 
 <img src="https://i.ibb.co/rsnBTWZ/MOSFET1.png" width="420"><img src="https://i.ibb.co/ThJPvtG/MOSFET2.png" width="420">
