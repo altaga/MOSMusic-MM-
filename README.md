@@ -120,7 +120,7 @@ As you can see this was done in steps to manage safety, I repeat it is dangerous
 
 With the circuit running, we decided to make control modules like the one shown in the image to not depend on any cable failing in the breadboard.
 
-<img src="https://i.ibb.co/cwBmGVz/Whats-App-Image-2019-01-10-at-17-50-41.jpg" width="400"><img src="https://i.ibb.co/JmDS6tv/Whats-App-Image-2019-01-10-at-17-59-32.jpg" width="400">
+<img src="https://i.ibb.co/cwBmGVz/Whats-App-Image-2019-01-10-at-17-50-41.jpg" width="300"><img src="https://i.ibb.co/JmDS6tv/Whats-App-Image-2019-01-10-at-17-59-32.jpg" width="300">
 
 The board was made based on the one that is in the folder "PCB Files" however since we did not have transfer paper we had to make the vias with a sharpie. It is a permanenr marker so when you dip the plate in ferric chloride it survives, this process is the classic one for making homemade PCBs. You can get to know more about this process in the following link:
 
