@@ -72,19 +72,18 @@ The MOSFET's operation is to ground the optocoupler diode, once this is activate
 
 La otra gran ventaja de utilizar el MOSFET es la capacidad de poder aumentar la cantidad de drivers como en la imagen 1 o usar drivers mas potentes sin necesidad de cambiar el diseño del circuito principal.
 
-<img src="https://i.ibb.co/rsnBTWZ/MOSFET1.png" width="400"><img src="https://i.ibb.co/ThJPvtG/MOSFET2.png" width="400">
+<img src="https://i.ibb.co/rsnBTWZ/MOSFET1.png" width="420"><img src="https://i.ibb.co/ThJPvtG/MOSFET2.png" width="420">
 
 Diferentes resultados en distintas boards:
 
-| Comparison                     | Voltage [V]  | Current [mA] | Max Current I/O Pins [mA]|
-|--------------------------------|--------------|--------------|--------------------------|
-| **Without MOSFET 600VCoolMOS** | 5.0          | 15.0         | 40.0  (Arduino UNO)      | 
-| **With MOSFET 600VCoolMOS**    | 5.0          | 0.06         | 40.0  (Arduino UNO)      |
-
-| Comparison                     | Voltage [V]  | Current [mA] | Max Current I/O Pins [mA]|
-|--------------------------------|--------------|--------------|--------------------------|
-| **Without MOSFET 600VCoolMOS** | 5.0          | 15.0         | 10.0  (ESP32)            | 
-| **With MOSFET 600VCoolMOS**    | 5.0          | 0.06         | 10.0  (ESP32)            |
+| Comparison                     | Voltage [V]  | Current [mA] | Max Current I/O Pins [mA]| Boards      |
+|--------------------------------|--------------|--------------|--------------------------|-------------|
+| **Without MOSFET 600VCoolMOS** | 5.0          | 15.0         | 40.0                     | Arduino UNO |
+| **With MOSFET 600VCoolMOS**    | 5.0          | 0.06         | 40.0                     | Arduino UNO |
+| **Without MOSFET 600VCoolMOS** | 3.3          | 15.0         | 10.0                     | ESP32       | 
+| **With MOSFET 600VCoolMOS**    | 3.3          | 0.04         | 10.0                     | ESP32       |
+| **Without MOSFET 600VCoolMOS** | 3.3          | 15.0         | 10.0                     | ESP8266     | 
+| **With MOSFET 600VCoolMOS**    | 3.3          | 0.04         | 10.0                     | ESP8266     |
 
 Another solution to this project would have been to use relays, which have the function of performing this same task but mechanically, by generating a "Click" on each switch. The problem with this type of component is that if we use dimerizable lights or the switching frequency was larger, the relay could not perform this task, which the mosfet, optocoupler and triac can easily do.
 
