@@ -69,7 +69,8 @@ This consumption is extremely important because it gives us the possibility of b
 
 <img src="https://i.ibb.co/Jx4Jbh9/Infineon.png">
 The MOSFET's operation is to ground the optocoupler diode, once this is activated it allows the flow of energy through the DIAC and this in turn allows the passage of current in the TRIAC connected to the lamp and igniting it in the process
-.
+
+Español
 
 La otra gran ventaja de utilizar el MOSFET es la capacidad de poder aumentar la cantidad de drivers como en la imagen 1 o usar drivers mas potentes sin necesidad de cambiar el diseño del circuito principal.
 
@@ -83,8 +84,8 @@ Diferentes resultados en distintas boards:
 | **With MOSFET 600VCoolMOS**    | 5.0          | 0.06         | 40.0                     | Arduino UNO |    LOW      |
 | **Without MOSFET 600VCoolMOS** | 3.3          | 15.0         | 10.0                     | ESP32       | EXTREMELY   |
 | **With MOSFET 600VCoolMOS**    | 3.3          | 0.04         | 10.0                     | ESP32       | EXTREMELY   |
-| **Without MOSFET 600VCoolMOS** | 3.3          | 15.0         | 12.0                     | ESP8266     | EXTREMELY   |
-| **With MOSFET 600VCoolMOS**    | 3.3          | 0.04         | 12.0                     | ESP8266     | EXTREMELY   |
+| **Without MOSFET 600VCoolMOS** | 3.3          | 15.0         | 12.0                     | ESP8266     | HIGH        |
+| **With MOSFET 600VCoolMOS**    | 3.3          | 0.04         | 12.0                     | ESP8266     | HIGH        |
 
 Another solution to this project would have been to use relays, which have the function of performing this same task but mechanically, by generating a "Click" on each switch. The problem with this type of component is that if we use dimerizable lights or the switching frequency was larger, the relay could not perform this task, which the mosfet, optocoupler and triac can easily do.
 
