@@ -72,7 +72,7 @@ The MOSFET's operation is to ground the optocoupler diode, once this is activate
 
 La otra gran ventaja de utilizar el MOSFET es la capacidad de poder aumentar la cantidad de drivers como en la imagen 1 o usar drivers mas potentes sin necesidad de cambiar el diseño del circuito principal.
 
-<img src="https://i.ibb.co/rsnBTWZ/MOSFET1.png" width="500"><img src="https://i.ibb.co/ThJPvtG/MOSFET2.png" width="500">
+<img src="https://i.ibb.co/rsnBTWZ/MOSFET1.png" width="400"><img src="https://i.ibb.co/ThJPvtG/MOSFET2.png" width="400">
 
 Diferentes resultados en distintas boards:
 
