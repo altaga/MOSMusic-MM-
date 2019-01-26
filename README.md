@@ -68,6 +68,7 @@ In the first stage of the circuit we have an Infineon 600VCoolMOS C7 MOSFET, whi
 This consumption is extremely important because it gives us the possibility of being able to literally use any controller to perform this task due to its low consumption, thus not requiring more expensive drivers that can supply said power in their ports.
 
 <img src="https://i.ibb.co/Jx4Jbh9/Infineon.png">
+
 The MOSFET's operation is to ground the optocoupler diode, once this is activated it allows the flow of energy through the DIAC and this in turn allows the passage of current in the TRIAC connected to the lamp and igniting it in the process.
 
 The other great advantage of using the MOSFET is the ease of increasing the number of drivers as in image 1 or using more powerful drivers as in image 2 without changing the design of the main circuit.
