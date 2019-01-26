@@ -76,7 +76,7 @@ The other great advantage of using the MOSFET is the ease of increasing the numb
 
 Different results in different boards:
 
-| Comparison                     | Voltage [V]  | Current [mA] | Max Current I/O Pins [mA]| Boards      | Risk        |
+| Comparison                     | Voltage [V]  | Current [mA] | Max Current I/O Pins [mA]| Board       | Risk        |
 |--------------------------------|--------------|--------------|--------------------------|-------------|-------------|
 | **Without MOSFET 600VCoolMOS** | 5.0          | 15.0         | 40.0                     | Arduino UNO | LOW         | 
 | **With MOSFET 600VCoolMOS**    | 5.0          | 0.06         | 40.0                     | Arduino UNO | NOTHING     |
